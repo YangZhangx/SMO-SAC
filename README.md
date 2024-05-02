@@ -20,7 +20,7 @@ pythorch
 3. set obstacles in 'obstacle.py'
 4. set obstacle cars in 'obs_car.py'
 5. set start position and target parking place of ego car
-6. set the plots save file in 'main.py'
+6. set the plots saving file in 'main.py'
 7. run 'main.py'
 
 #### Result
