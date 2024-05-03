@@ -2,7 +2,7 @@
 Code for paper "Safety Enhancement for Reinforcement Learning with Sliding Mode Observer-based Control for Automatic Parking"
 
 ### SMO-SAC
-Sliding mode observer based soft Soft Actor-Critic
+Sliding mode observer-based soft Soft Actor-Critic
 
 # Introduction
 A method to improve the security of reinforcement learning with the reinforcement learning algorithm sac combined with a sliding mode observer. 
@@ -11,7 +11,7 @@ After continuous training, the vehicle can eventually be made to park accurately
 
 ## Requirements
 python 3.9
-pythorch
+pythorch 2.0.1
 
 ## How To Run
 
@@ -19,13 +19,15 @@ pythorch
 2. 'pip install -r requirements.txt'
 3. set obstacles in 'obstacle.py'
 4. set obstacle cars in 'obs_car.py'
-5. set start position and target parking place of ego car
-6. set the plots saving file in 'main.py'
-7. run 'main.py'
+5. set the start position and target parking place of ego car in 'bicycle_model.py'
+6. adjust Reward functions in 'bicycle_model.py'
+7. set the plots saving file in 'main.py'
+8. run 'main.py'
 
 #### Result
 
 To get 5-car scenario, set obs_car with 5 cars
+
 
 ### Contributors
 Yang Zhang (TUM) Guran (TUM)
