@@ -29,5 +29,3 @@ pythorch 2.0.1
 To get 5-car scenario, set obs_car with 5 cars
 
 
-### Contributors
-Yang Zhang (TUM) Guran (TUM)
