@@ -1,5 +1,7 @@
 # SMO-SAC
 Code for paper "Safety Enhancement for Reinforcement Learning with Sliding Mode Observer-based Control for Automatic Parking"
+And master's thesis "Safety Enhancing for Reinforcement Learning with Sliding Mode Observer-based Control"
+
 
 ### SMO-SAC
 Sliding mode observer-based soft Soft Actor-Critic
@@ -27,5 +29,6 @@ pythorch 2.0.1
 #### Result
 
 To get 5-car scenario, set obs_car with 5 cars
+Similarly, to get 4-car or 3-car scenario
 
 
