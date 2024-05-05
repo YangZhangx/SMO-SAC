@@ -8,9 +8,11 @@ And master's thesis "Safety Enhancing for Reinforcement Learning with Sliding Mo
 Sliding mode observer-based soft Soft Actor-Critic
 
 # Introduction
-A method to improve the security of reinforcement learning with the reinforcement learning algorithm sac combined with a sliding mode observer. 
+A method to improve the security of reinforcement learning with RL combined with a sliding mode observer. 
+
 A specific parking environment is designed in the paper. The environment has parking spaces, roads, and cars as obstacles. The algorithm enables the control of vehicle speed, acceleration and steering angle. 
-After continuous training, the vehicle can eventually be made to park accurately in the target parking space.
+
+After continuous training, the vehicle can eventually park accurately in the target parking space.
 
 ## Requirements
 python 3.9
@@ -29,7 +31,7 @@ pythorch 2.0.1
 
 #### Result
 
-To get 5-car scenario, set obs_car with 5 cars
+To get 5-car scenario, set obs_car with 5 cars.
 Similarly, to get 4-car or 3-car scenario
 
 
