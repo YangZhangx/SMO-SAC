@@ -15,38 +15,37 @@ class SMO:
         self.u = 1  # input
         self.x_true[0] = np.array([1.0, 0.0])
         self.x_hat[0] = np.array([0.9, 0.0])
-        self.disturbance = np.random.normal(0, 0.01, len(self.time))  # 随机扰动
+        self.disturbance = np.random.normal(0, 0.01, len(self.time))  # add random disturbance
 
     
     def nonlinear_system_with_disturbance(x, u, disturbance):
         dx1 = x[1]
-        dx2 = -x[0] + u + disturbance  # 加扰动使波形随机
+        dx2 = -x[0] + u + disturbance  
         return np.array([dx1, dx2])
 
-    # 滑动面
+    # sliding surface
     def sliding_surface(x, x_hat):
         return x - x_hat
 
-    # 控制律
+    # control law
     def sliding_mode_control(s):
-        k = 0.04  # 增益
+        k = 0.04  # gain
         return k * np.sign(s)
 
 
-#     # 仿真参数
-# # 仿真参数
+# parameter for simulation
 # t_max = 50.0
 # dt = 0.01
 # time = np.arange(0, t_max, dt)
 # x_true = np.zeros((len(time), 2))
 # x_hat = np.zeros((len(time), 2))
 # u = 1  # input
-# # 初始状态
+# # init state
 # x_true[0] = np.array([1.0, 0.0])
 # x_hat[0] = np.array([0.9, 0.0])
 # disturbance = np.random.normal(0, 0.01, len(time))  # 随机扰动
 
-# # 画图 
+# plot
 # plt.plot(time, x_true[:, 0], label="True_x")
 # plt.plot(time, x_hat[:, 0], label="Est_x")
 # plt.legend()
